@@ -1,140 +1,3 @@
-// ***** PLAYLIST DATA ******** (hardcoded for now)
-
-const playlist = {
-  playlist_name: "Coffee Country",
-  tracks: [
-    {
-      chapter: 1,
-      title: "Arriving in the Mission",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+1+Arriving+in+the+Mission.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-01.jpg",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "2:01:00"
-    },
-    {
-      chapter: 2,
-      title: "El Salvador's Refugees",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+2+El+Salvador_s+Refugees.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-02.jpg",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "2:43:00"
-    },
-    {
-      chapter: 3,
-      title: "Placekeeping in the Mission",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+3+Placekeeping+in+San+Francisco.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-03.jpg",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "2:28:00"
-    },
-    {
-      chapter: 4,
-      title: "If Walls Could Talk",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+4+If+Walls+Could+Talk.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-04.png",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "2:57:00"
-    },
-    {
-      chapter: 5,
-      title: "Coffee at Temos",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+5+Coffee+at+Temos.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-05.png",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "2:58:00"
-    },
-    {
-      chapter: 6,
-      title: "Jorge's Journey",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+6+Jorge_s+Journey.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-06.jpg",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "8:56:00"
-    },
-    {
-      chapter: 7,
-      title: "Starting the Sanctuary Movement",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+7+Starting+the+Sanctuary+Movement.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-07.jpg",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "3:36:00"
-    },
-    {
-      chapter: 8,
-      title: "A Sanctuary City",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+8++A+Sanctuary+City.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-08.jpeg",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "2:18:00"
-    },
-    {
-      chapter: 9,
-      title: "Gentrification and Eviction",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+9+Gentrification+and+Eviction.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-09.jpg",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "2:22:00"
-    },
-    {
-      chapter: 10,
-      title: "La Lucha Sigue",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+10+La+Lucha+Sigue.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-10.jpg",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "2:04:00"
-    },
-    {
-      chapter: 11,
-      title: "Neighborhood of Sun",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+11+Neighborhood+of+Sun.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-11.jpg",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "2:52:00"
-    },
-    {
-      chapter: 12,
-      title: "The Mission Family",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+12+The+Mission+Family.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-12.jpg",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "2:57:00"
-    },
-    {
-      chapter: 13,
-      title: "Thank You",
-      audio_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-MP3s/Chapter+13+Thank+You.mp3",
-      artwork_url: "https://cmm-cloud-2.s3.us-west-1.amazonaws.com/WALKING+TOURS/2025-03-18-MISSION-WALKING-TOUR/2025-03-18-MISSION-ART/2025-03-18-MISSION-ART-13.png",
-      playlist: "Coffee Country",
-      IsAR: false,
-      XR_Scene: "",
-      duration: "0:45:00"
-    }
-  ]
-};
 
 
 // State management
@@ -170,7 +33,6 @@ const elements = {
   sceneContainer: document.getElementById('sceneContainer'),
   playlistContainer: document.getElementById('playlistContainer'),
   playlistTracks: document.getElementById('playlistTracks'),
-  playlistClose: document.getElementById('playlistClose'),
   permissionOverlay: document.getElementById('permissionOverlay'),
   enableMotionBtn: document.getElementById('enableMotionBtn'),
   skipBtn: document.getElementById('skipMotionBtn'),
@@ -182,11 +44,16 @@ const elements = {
 
 };
 
+let playlist = null;
+
 
 // Initialize the player
 async function initializePlayer() {
       
   try {
+
+      await loadPlaylistData();
+
       setupEventListeners();
       populatePlaylist();
       setupAudioElement();
@@ -213,6 +80,35 @@ async function initializePlayer() {
       window.addEventListener('message', handleIframeMessages);
   } catch (error) {
       console.error('Error initializing player:', error);
+
+      elements.trackTitle.textContent = 'Error loading playlist';
+      elements.trackArtist.textContent = 'Please check your connection';
+  }
+}
+
+// NEW FUNCTION: Load playlist data from JSON file
+async function loadPlaylistData() {
+  try {
+    const response = await fetch('playlist.json'); // Path to your JSON file
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    playlist = await response.json();
+    
+    // Validate the loaded data
+    if (!playlist || !playlist.playlist_name || !Array.isArray(playlist.tracks)) {
+      throw new Error('Invalid playlist data format');
+    }
+    
+    console.log('Playlist data loaded successfully');
+  } catch (error) {
+    console.error('Failed to load playlist data:', error);
+    // Provide fallback empty playlist to prevent errors
+    playlist = {
+      playlist_name: "Playlist",
+      tracks: []
+    };
+    throw error; // Re-throw so initializePlayer can handle it
   }
 }
 
@@ -281,7 +177,7 @@ function setupEventListeners() {
   elements.exitXRBtn.addEventListener('click', exitXRMode);
 
   // Playlist
-  elements.playlistClose.addEventListener('click', togglePlaylist);
+  // elements.playlistClose.addEventListener('click', togglePlaylist);
 
   // Device orientation
   elements.enableMotionBtn.addEventListener('click', function() {
@@ -319,25 +215,6 @@ function setupEventListeners() {
       }
   });
 
-//     // Keyboard shortcuts
-// document.addEventListener('keydown', (e) => {
-//     if (e.code === 'Space') {
-//         e.preventDefault();
-//         togglePlayPause();
-//     } else if (e.code === 'ArrowRight') {
-//         playNextTrack();
-//     } else if (e.code === 'ArrowLeft') {
-//         playPreviousTrack();
-//     } else if (e.code === 'KeyM') {
-//         toggleMute();
-//     } else if (e.code === 'BracketRight') {
-//         elements.audioElement.currentTime += 5;
-//     } else if (e.code === 'BracketLeft') {
-//         elements.audioElement.currentTime -= 5;
-//     } else if (e.code === 'KeyS') {
-//         togglePlaybackSpeed();
-//     }
-// });
 
 }
 
@@ -672,17 +549,6 @@ function setupXRScene(videoUrl) {
   
 }
 
-                  //   // iOS requires direct user interaction to play video
-                  //   function handleFirstInteraction() {
-                  //     document.removeEventListener('touchstart', handleFirstInteraction);
-                  //     document.removeEventListener('click', handleFirstInteraction);
-                      
-                  //     video.play().catch(e => console.error('Video play error:', e));
-                  // }
-                  
-                  // document.addEventListener('touchstart', handleFirstInteraction, { once: true });
-                  // document.addEventListener('click', handleFirstInteraction, { once: true });
-
 function postMessageToIframe(message) {
   if (!state.iframeReady) {
     state.pendingMessages.push(message); // Queue messages
@@ -790,9 +656,6 @@ async function playPreviousTrack() {
       console.error('Error autoplaying previous track:', error);
   }
 
-  // if (state.isPlaying) {
-  //     elements.audioElement.play().catch(console.error);
-  // }
 }
 
 
@@ -959,18 +822,8 @@ async function loadTrack(index, shouldAutoplay = false) {
   elements.audioElement.src = track.audio_url;
   elements.albumArt.src = track.artwork_url;
   elements.trackTitle.textContent = `Chapter ${track.chapter}: ${track.title}`;
-  elements.trackArtist.textContent = `Coffee Country`;
+  elements.trackArtist.textContent = `Ni de Aquí, Ni de Allá`;
   elements.duration.textContent = track.duration || '0:00';
-
-  // elements.audioElement.playbackRate = 1;
-  // elements.speedBtn.textContent = '1x';
-
-      // // Update XR button visibility - only if not in XR mode
-      // if (!state.isXRMode) {
-      //     const showXRButton = track.IsAR && track.XR_Scene && track.XR_Scene.trim() !== "";
-      //     elements.viewXRBtn.style.display = showXRButton ? 'block' : 'none';
-      //     elements.exitXRBtn.style.display = 'none';
-      // }
 
 // Show View 360° button only if track has XR content AND we're not in XR mode
 const showXRButton = track.IsAR && track.XR_Scene && track.XR_Scene.trim() !== "";
@@ -1002,14 +855,7 @@ elements.exitXRBtn.style.display = state.isXRMode ? 'flex' : 'none';
   preloadAdjacentXRVideos(index).catch(console.error);
 
   updatePlayPauseButton();
-  // togglePlaylist();
 
-      // // Preload video metadata if XR is available
-      // if (track.IsAR && track.XR_Scene) {
-      //     const video = document.createElement('video');
-      //     video.src = track.XR_Scene;
-      //     video.load();
-      // }
 }
 
 function togglePlaylist() {
