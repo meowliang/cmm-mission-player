@@ -50,7 +50,7 @@ let playlist = null;
 // Initialize the player
 async function initializePlayer() {
       
-  try {jm
+  try {
 
       await loadPlaylistData();
 
@@ -361,6 +361,7 @@ async function enterXRMode() {
     // Track 360° button click
     window.dataLayer.push({
       'event': 'view_360_clicked',
+      'tour_name': playlist.playlist_name,
       'track_title': currentTrack.title,
       'track_chapter': currentTrack.chapter
     });
@@ -418,6 +419,7 @@ async function exitXRMode() {
       // Track exit 360° button click
       window.dataLayer.push({
         'event': 'exit_360_clicked',
+        'tour_name': playlist.playlist_name,
         'track_title': currentTrack.title,
         'track_chapter': currentTrack.chapter
       });
