@@ -50,7 +50,7 @@ let playlist = null;
 // Initialize the player
 async function initializePlayer() {
       
-  try {
+  try {jm
 
       await loadPlaylistData();
 
@@ -840,9 +840,9 @@ function updateProgress() {
     }
     if (progressPercent >= 99) { // Use 99 to avoid multiple triggers
       window.dataLayer.push({
-        'event': 'audio_complete',
+        'event': 'chapter_complete',
         'tour_name': playlist.playlist_name,
-        'track_title': playlist.tracks[state.currentTrack].title
+        'chapter_title': playlist.tracks[state.currentTrack].title
       });
     }
   }
